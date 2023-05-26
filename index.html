@@ -115,6 +115,14 @@
         
     <script>
         // 옆으로 가는 메뉴
+        $('.gnb > li').hover(
+            function(){
+                $(this).find('ul').stop().show()
+            },
+            function(){
+                $(this).find('ul').stop().hide()
+            }
+        )
 
         // 밑으로 내려오는 메뉴
         // $('.gnb > li').hover(
